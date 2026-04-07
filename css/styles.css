@@ -44,7 +44,7 @@ img.responsive {
  * */
 @font-face {
   font-family: 'LofiMonogram';
-  src: url('/css/monogram.ttf');
+  src: url('monogram.ttf');
   font-weight: normal;
   font-style: normal;
 }
