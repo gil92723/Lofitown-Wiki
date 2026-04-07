@@ -1,0 +1,111 @@
+/*
+ * HEADER stuff
+ * */
+
+/*Marquee*/
+.marquee-container {
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.marquee-content {
+    font-family: "LofiMonogram";
+    display: inline-block;
+    animation: scroll-left 25s linear infinite;
+}
+
+@keyframes scroll-left {
+  from { transform: translateX(50%); }
+  to { transform: translateX(-100%); }
+}
+
+/* Pause on hover for better accessibility */
+.marquee-container:hover .marquee-content {
+  animation-play-state: paused;
+}
+
+.wiki-header {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    border-radius:24px; /*roundness of box*/
+}
+
+img.responsive {
+    max-width: 75%;
+    height: auto;
+    display: block;
+    margin: 0 auto 15px;
+}
+
+/*
+ * FONT stuff
+ * */
+@font-face {
+  font-family: 'LofiMonogram';
+  src: url('/assets/monogram.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6 {
+    font-family: "LofiMonogram", Georgia, "Times New Roman", serif /*rtl:Amiri, Georgia, "Times New Roman", serif*/;
+    margin-top: 0;
+}
+
+body, p, .nav {
+  font-family: 'LofiMonogram', sans-serif !important;
+}
+
+.display-4 {
+    font-size: 2.5rem;
+}
+@media (min-width: 768px) {
+    .display-4 {
+        font-size: 3rem;
+    }
+}
+
+.flex-auto {
+    flex: 0 0 auto;
+}
+
+.h-250 {
+    height: 250px;
+}
+@media (min-width: 768px) {
+    .h-md-250 {
+        height: 250px;
+    }
+}
+
+/*
+ * SIDEBAR
+ * */
+#sidebar {
+  max-width: 240px;
+  width: 240px;
+  padding: 1em;
+  margin-right: 10px;
+}
+
+.side-sticky{
+  position: sticky;
+  top: 20px;
+}
+
+/*
+ * Footer
+ */
+.blog-footer {
+    font-family: 'LofiMonogram';
+    padding: 2.5rem 0;
+    color: #727272;
+    text-align: center;
+    background-color: #f9f9f9;
+    border-top: 0.05rem solid #e5e5e5;
+}
+.blog-footer p:last-child {
+    margin-bottom: 0;
+}
