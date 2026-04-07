@@ -1,0 +1,2 @@
+# Lofitown-Wiki
+
