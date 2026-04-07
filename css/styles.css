@@ -50,7 +50,7 @@ img.responsive {
 }
 
 h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6 {
-    font-family: "LofiMonogram", Georgia, "Times New Roman", serif /*rtl:Amiri, Georgia, "Times New Roman", serif*/;
+    font-family: "LofiMonogram", serif /*rtl:Amiri, Georgia, "Times New Roman", serif*/;
     margin-top: 0;
 }
 
